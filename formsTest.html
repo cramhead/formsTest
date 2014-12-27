@@ -1,0 +1,16 @@
+<head>
+  <title>formsTest</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  {{> testForm}}
+</body>
+
+<!-- Wrapped input with form-wide schema -->
+<template name="testForm">
+  {{#basicForm schema=schema action=action}}
+  {{> basicInput field='testField'}}
+  {{/basicForm}}
+</template>
